@@ -6,12 +6,18 @@ var app = angular.module('webixApp', [ "webix" ]);
 
 app.controller("webixTestController", function($scope){
   $scope.records = [
-  	{ id:1, title:"The Shawshank Redemption", year:1994, votes:678790, rating:9.2, rank:1},
-	{ id:2, title:"The Godfather", year:1972, votes:511495, rating:9.2, rank:2},
-	{ id:3, title:"The Godfather: Part II", year:1974, votes:319352, rating:9.0, rank:3},
-	{ id:4, title:"The Good, the Bad and the Ugly", year:1966, votes:213030, rating:8.9, rank:4},
-	{ id:5, title:"My Fair Lady", year:1964, votes:533848, rating:8.9, rank:5},
-	{ id:6, title:"12 Angry Men", year:1957, votes:164558, rating:8.9, rank:6}
+		{ id:1, firstName:"The Shawshank Redemption", lastName:'Singh', gender:'male', email:'vimal@gmail.com', 
+		city:'Alaska', country:'America'},
+		{ id:2, firstName:"The SVimal", lastName:'Rathore', gender:'female', email:'vimal123@gmail.com', 
+		city:'Alaska2', country:'America3'},
+		{ id:3, firstName:"The SertVimal", lastName:'Rathore3', gender:'female', email:'vimal123@gmail.com', 
+		city:'Alaska2', country:'America3'},
+		{ id:4, firstName:"The SertVimal", lastName:'Rathore3', gender:'female', email:'vimal123@gmail.com', 
+		city:'Alaska2', country:'America3'},
+		{ id:5, firstName:"The SertVimal", lastName:'Rathore3', gender:'female', email:'vimal123@gmail.com', 
+		city:'Alaska2', country:'America3'},
+		{ id:6, firstName:"The SertVimal6", lastName:'Rathore6', gender:'female', email:'vimal16@gmail.com', 
+		city:'Alaska2', country:'America3'},
   ];
 
   $scope.lines = [
@@ -29,10 +35,13 @@ app.controller("webixTestController", function($scope){
 
   $scope.addRecord = function(){
   	$scope.records.push({
-  		title:"New Record",
-  		rating:999,
-  		votes:0,
-  		year:2013
+  		id:'New Record',
+  		firstName:'Test',
+  		lastName:'Test1',
+	    gender:'Male',
+	    email:'vimal@gmail.com',
+		city:'Bangalore',
+		country:'India'
   	});
   };
 
